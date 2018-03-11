@@ -1,0 +1,15 @@
+#Install bootsrap
+-->npm install --save bootstrap
+#Install jquery and typings
+-->npm install jquery --save
+-->npm install --save-dev @types/jquery
+#Install font awesome
+-->npm install font-awesome --save
+#Install the latest version of cli
+-->npm install --save-dev @angular/cli@latest
+#Run the app
+--> ng serve
+-->npm start
+#Generate a component without test file
+--> ng generate component {component.name} --spec false [short: ng g c {component.name} --spec false]
+--> ng g c {component.parent.name}/{component.name} --spec false

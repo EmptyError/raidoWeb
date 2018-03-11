@@ -1,0 +1,18 @@
+/* Footer */
+#footer {
+  background-color: #222222;
+  color: #777;
+  padding: 15px 0 10px 0;
+  text-align: center;
+}
+#footer p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+#footer a {
+  color: #999;
+}
+#footer a:hover, a:focus {
+  text-decoration: none;
+  color: #0dad8d;
+}

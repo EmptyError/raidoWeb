@@ -1,0 +1,54 @@
+/* Home Style */
+header {
+  background: url(../img/header-bg.jpg) no-repeat bottom right;
+  background-size: cover;
+  color: #cfcfcf;
+  position: relative;
+  height: 100%;
+}
+header p {
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.intro-text {
+  position: relative;
+  padding: 250px 0 250px 0;
+}
+.intro-text H1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.btn-default {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.8);
+  margin: 0 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+  background-color: #fff;
+  color: #0dad8d;
+  border-color: #fff;
+}
+
+/*put icon inside input*/
+.calendarspan {
+  float: left;
+  margin-left: 6px;
+  margin-top: -25px;
+  color: #00b386;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
