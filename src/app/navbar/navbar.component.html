@@ -1,28 +1,34 @@
-
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+<nav id="menu" class="navbar navbar-light navbar-expand-lg fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span> <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <i class="fa fa-sun-o"></i> Raido<strong></strong>
-      </a>
-    </div>
-
+    <a class="navbar-brand" href="#">  <!-- Put before button means that it will be showed on the left of the toggle -->
+      <i class="fa fa-sun-o"></i> Raido<strong></strong>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#nav-list">
+      <i class="fa fa-bars"></i><strong></strong>
+    </button>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home" class="page-scroll">Home</a></li>
-        <li><a href="#services-section" class="page-scroll">Services</a></li>
-        <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
-        <li><a href="#about-section" class="page-scroll">About</a></li>
-        <li><a href="#team-section" class="page-scroll">Team</a></li>
-        <li><a href="#contact-section" class="page-scroll">Contact</a></li>
+    <div class="collapse navbar-collapse justify-content-end" id="nav-list">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services-section" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#works-section" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-section" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team-section" class="nav-link">Team</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact-section" class="nav-link">Contact</a>
+        </li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
