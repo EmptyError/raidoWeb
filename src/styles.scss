@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~leaflet/dist/leaflet.css';
+
+.on-map {
+  position: relative;
+  z-index: 1000;
+}
+
+#transparent_background {
+  background: linear-gradient(rgba(0, 153, 153, 0.6),rgba(0, 153, 153, 0.6)), url(app/img/polymar.png);
+  background-size: cover;
+  position: absolute;
+  opacity: 0.3;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.box-frame {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

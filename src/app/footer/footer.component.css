@@ -4,6 +4,8 @@
   color: #777;
   padding: 15px 0 10px 0;
   text-align: center;
+  position: relative;
+  bottom: 50px;
 }
 #footer p {
   font-size: 13px;

@@ -1,43 +1,56 @@
 /* Home Style */
 header {
-  background: linear-gradient(rgba(0, 153, 153, 0.6),rgba(0, 153, 153, 0.6)),
-  url(../img/stmap.jpeg);
-  background-size: cover;
-  position: relative;
+  /*background: linear-gradient(rgba(0, 153, 153, 0.6),rgba(0, 153, 153, 0.6)),*/
+  /*url(../img/polymar.png);*/
+  /*background-size: cover;*/
+  /*position: relative;*/
+  /*opacity: 0.2;*/
+  z-index: 1001;
   height: 100%;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 header p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(100, 16, 255, 0.8);
   font-size: 20px;
   margin-bottom: 80px;
+  pointer-events: none;
 }
+
+header h1 {
+  pointer-events: none;
+}
+
 .intro-text {
   position: relative;
   padding: 250px 0 250px 0;
+  color: #20b5ff;
 }
+
 .intro-text H1 {
   font-size: 60px;
   text-transform: uppercase;
-  color: #fff;
+  color: #6800aa;
 }
+
 .btn-default {
-  color: #fff;
+  color: #6800aa;
   font-family: 'Open Sans', sans-serif;
   background-color: transparent;
-  border: 2px solid rgba(255,255,255,0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
   margin: 0 8px;
   padding: 12px 24px;
   font-size: 16px;
   transition: all 0.5s;
   border-radius: 4px;
 }
+
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-  background-color: #fff;
-  color: #0dad8d;
-  border-color: #fff;
+  background-color: #330020;
+  color: #6800aa;
+  border-color: #330020;
 }
 
 /*put icon inside input*/
@@ -45,13 +58,24 @@ header p {
   float: left;
   margin-left: 6px;
   margin-top: -25px;
-  color: #00b386;
+  color: #6800aa;
 }
 
 /* align icon */
-.left-addon .fa  { left:  0px;}
-.right-addon .fa { right: 0px;}
+.left-addon .fa {
+  left: 0px;
+}
+
+.right-addon .fa {
+  right: 0px;
+}
 
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
+.left-addon input {
+  padding-left: 30px;
+}
+
+.right-addon input {
+  padding-right: 30px;
+}
+

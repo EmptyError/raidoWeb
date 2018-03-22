@@ -1,6 +1,8 @@
 /* Navigation */
 #menu {
   padding: 20px;
+  margin-right: 45px;
+  margin-left: 45px;
   transition: all 0.8s;
 }
 #menu.navbar-light {
@@ -10,39 +12,39 @@
 #menu a.navbar-brand {
   text-transform: uppercase;
   font-size: 22px;
-  color: #fff;
+  color: #6800aa;
   font-weight: 900;
 }
 #menu a.navbar-brand i.fa {
-  color: rgba(255,255,255,0.7);
+  color: rgb(111, 0, 172);
   margin-right: 3px;
 }
 #menu.navbar-light .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #eeeeee;
+  color: #6800aa;
   font-size: 12px;
   letter-spacing: 1px;
 }
 #menu.navbar-light .navbar-nav > li > a:hover {
-  color: #0dad8d;
+  color: #6800aa;
 }
 .on {
   background-color: #222222 !important;
   padding: 0 !important;
 }
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active > a:hover, .navbar-light .navbar-nav > .active > a:focus {
-  color: #0dad8d !important;
+  color: #6800aa !important;
   background-color: transparent;
 }
 .navbar-toggler {
   border-radius: 0;
 }
 .navbar-light .navbar-toggler:hover, .navbar-light .navbar-toggler:focus {
-  border-color: #0dad8d;
+  border-color: #6800aa;
 }
 
 .navbar-light .navbar-toggler> i:hover, .navbar-light .navbar-toggler> i:focus {
-  color: #0dad8d;
+  color: #6800aa;
 }
 
 .navbar-light .navbar-toggler > i {
