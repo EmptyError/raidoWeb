@@ -4,38 +4,33 @@
     <div class="intro-text">
       <div class="container">
         <div class="row">
-          <form class="col-md-12">
-            <div class="col-md-10">
-              <div class="col-md-8" style="padding: 0px;">
-                <div class="col-md-5" style="padding-right: 0px;">
-                  <div class="form-group on-map">
-                    <input type="text" class="form-control" placeholder="From:" id="frm">
-                  </div>
-                </div>
-                <div class="col-md-2" style="padding-right: 0px; padding-left: 0px;">
-                  <i class="fa fa-exchange fa-2x" style="position: inherit;" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-5" style="padding-left: 0px;">
-                  <div class="form-group on-map">
-                    <input type="text" class="form-control" placeholder="To:" id="to">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 on-map">
-                <div class="form-group input-append date" id="datetimepiker">
-                  <div class="inner-addon left-addon" style="position: relative">
-                    <input type="text" class="form-control" id="date" readonly>
-                    <span class="add-on calendarspan">
-                                        <i class="fa fa-th icon-th"></i>
-                                    </span>
-                  </div>
-                </div>
+            <div class="col-sm-3">
+              <div class="ui-inputgroup on-map">
+                <span class="ui-inputgroup-addon">From:</span>
+                <p-autoComplete [(ngModel)]="from" [suggestions]="settlementResults" (completeMethod)="search($event)" [style]="{'width':'140px'}" [inputStyle]="{'width':'140px'}" required="true"></p-autoComplete>
               </div>
             </div>
-            <div class="col-md-2 on-map">
-              <button class="btn btn-default btn-sm" style="padding: 4px  0px;">Get Route</button>
+            <div class="col-sm-3">
+              <div class="ui-inputgroup on-map">
+                <span class="ui-inputgroup-addon">To:</span>
+                <p-autoComplete [(ngModel)]="to" [suggestions]="settlementResults" (completeMethod)="search($event)" [style]="{'width':'140px'}" [inputStyle]="{'width':'140px'}" required="true"></p-autoComplete>
+              </div>
             </div>
-          </form>
+            <div class="col-sm-3">
+              <div class="ui-inputgroup on-map">
+                <span class="ui-inputgroup-addon">Date:</span>
+                <p-calendar [(ngModel)]="date" dateFormat="dd.mm.yy" [style]="{'width':'120px'}" [inputStyle]="{'width':'120px'}" required="true"></p-calendar>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="ui-inputgroup on-map">
+                <span class="ui-inputgroup-addon">Time:</span>
+                <p-calendar [(ngModel)]="time" timeOnly="true" hourFormat="24" [defaultDate]="defaultTime" [stepMinute]="60" [style]="{'width':'100px'}" [inputStyle]="{'width':'100px'}"></p-calendar>
+              </div>
+            </div>
+          <div class="col-sm-1">
+              <button pButton label="Search" class="ui-button-success on-map" (onClick)="handleClick($event)" [style]="{'width':'100%'}"></button>
+          </div>
         </div>
       </div>
     </div>
