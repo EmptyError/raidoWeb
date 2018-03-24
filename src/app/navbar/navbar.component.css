@@ -1,9 +1,11 @@
 /* Navigation */
 #menu {
   padding: 20px;
-  margin-right: 45px;
-  margin-left: 45px;
   transition: all 0.8s;
+  background: linear-gradient(rgba(0, 153, 153, 0.88), rgb(0, 181, 173)),
+  url(../img/polymar.png);
+  background-size: cover;
+  position: relative;
 }
 #menu.navbar-light {
   background-color: rgba(248, 248, 248, 0);
@@ -12,39 +14,39 @@
 #menu a.navbar-brand {
   text-transform: uppercase;
   font-size: 22px;
-  color: #6800aa;
+  color: #fff;
   font-weight: 900;
 }
 #menu a.navbar-brand i.fa {
-  color: rgb(111, 0, 172);
+  color: rgba(255,255,255,0.7);
   margin-right: 3px;
 }
 #menu.navbar-light .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #6800aa;
+  color: #eeeeee;
   font-size: 12px;
   letter-spacing: 1px;
 }
 #menu.navbar-light .navbar-nav > li > a:hover {
-  color: #6800aa;
+  color: #0dad8d;
 }
 .on {
   background-color: #222222 !important;
   padding: 0 !important;
 }
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active > a:hover, .navbar-light .navbar-nav > .active > a:focus {
-  color: #6800aa !important;
+  color: #0dad8d !important;
   background-color: transparent;
 }
 .navbar-toggler {
   border-radius: 0;
 }
 .navbar-light .navbar-toggler:hover, .navbar-light .navbar-toggler:focus {
-  border-color: #6800aa;
+  border-color: #0dad8d;
 }
 
 .navbar-light .navbar-toggler> i:hover, .navbar-light .navbar-toggler> i:focus {
-  color: #6800aa;
+  color: #0dad8d;
 }
 
 .navbar-light .navbar-toggler > i {

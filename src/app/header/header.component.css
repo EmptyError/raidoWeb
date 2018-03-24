@@ -12,6 +12,15 @@ header {
   width: 100%;
 }
 
+#search_form {
+  padding: 20px;
+  transition: all 0.8s;
+  background: linear-gradient(rgba(0, 153, 153, 0.88), rgb(0, 181, 173)),
+  url(../img/polymar.png);
+  background-size: cover;
+  position: relative;
+}
+
 header p {
   color: rgba(100, 16, 255, 0.8);
   font-size: 20px;
@@ -25,7 +34,7 @@ header h1 {
 
 .intro-text {
   position: relative;
-  padding: 250px 0 250px 0;
+  padding: 100px 0 0 0;
   color: #20b5ff;
 }
 

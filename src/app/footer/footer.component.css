@@ -2,10 +2,8 @@
 #footer {
   background-color: #222222;
   color: #777;
-  padding: 15px 0 10px 0;
   text-align: center;
   position: relative;
-  bottom: -150px;
 }
 #footer p {
   font-size: 13px;

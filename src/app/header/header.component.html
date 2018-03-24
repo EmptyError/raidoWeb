@@ -3,7 +3,7 @@
   <div id="header-div">
     <div class="intro-text">
       <div class="container">
-        <div class="row">
+        <div class="row on-map" id="search_form">
             <div class="col-sm-3">
               <div class="ui-inputgroup on-map">
                 <span class="ui-inputgroup-addon">From:</span>
@@ -19,7 +19,7 @@
             <div class="col-sm-3">
               <div class="ui-inputgroup on-map">
                 <span class="ui-inputgroup-addon">Date:</span>
-                <p-calendar [(ngModel)]="date" dateFormat="dd.mm.yy" [style]="{'width':'120px'}" [inputStyle]="{'width':'120px'}" required="true"></p-calendar>
+                <p-calendar [(ngModel)]="date" dateFormat="dd.mm.yy" [style]="{'width':'120px'}" showTime="true" [inputStyle]="{'width':'120px'}" required="true"></p-calendar>
               </div>
             </div>
             <div class="col-sm-2">
@@ -32,6 +32,42 @@
               <button pButton label="Search" class="ui-button-success on-map" (onClick)="handleClick($event)" [style]="{'width':'100%'}"></button>
           </div>
         </div>
+        <!--<br>-->
+        <!--<br>-->
+        <!--<br>-->
+        <!--<div class="row">-->
+          <!--<div class="col-sm-3">-->
+            <!--<div class="ui icon input loading on-map">-->
+              <!--<input type="text" placeholder="Search...">-->
+              <!--<i class="search icon"></i>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="col-sm-3">-->
+            <!--&lt;!&ndash;<ion-list class="on-map">&ndash;&gt;-->
+
+              <!--&lt;!&ndash;<ion-item>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ion-label>Username</ion-label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ion-input type="text"></ion-input>&ndash;&gt;-->
+              <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+
+              <!--&lt;!&ndash;<ion-item>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ion-label>Password</ion-label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ion-input type="password"></ion-input>&ndash;&gt;-->
+              <!--&lt;!&ndash;</ion-item>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</ion-list>&ndash;&gt;-->
+
+          <!--</div>-->
+          <!--<div class="col-sm-2">-->
+            <!--<div class="ui-inputgroup on-map">-->
+              <!--<span class="ui-inputgroup-addon">Time:</span>-->
+              <!--<p-calendar [(ngModel)]="time" timeOnly="true" hourFormat="24" [defaultDate]="defaultTime" [stepMinute]="60" [style]="{'width':'100px'}" [inputStyle]="{'width':'100px'}"></p-calendar>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="col-sm-1">-->
+            <!--<button pButton label="Search" class="ui-button-success on-map" (onClick)="handleClick($event)" [style]="{'width':'100%'}"></button>-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
     </div>
   </div>

@@ -54,8 +54,8 @@ export class MapComponent implements OnInit {
         //     tileSize: 256
         //   }).addTo(map);
 
-        L.control.zoom({position: "topright"}).addTo(map);
-        L.control.layers(this.mapService.baseMaps).addTo(map);
+        // L.control.zoom({position: "topright"}).addTo(map);
+        // L.control.layers(this.mapService.baseMaps).addTo(map);
         L.control.scale().addTo(map);
 
         this.address = location.address;
