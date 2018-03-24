@@ -23,6 +23,9 @@ import "leaflet";
 import "leaflet.vectorgrid";
 import {FooterComponent} from "./footer/footer.component";
 import {NavbarComponent} from "./navbar/navbar.component";
+import {AutoCompleteModule, CalendarModule} from "primeng/primeng";
+import {FormsModule} from "@angular/forms";
+import {ButtonModule} from "primeng/button";
 
 @NgModule({
   declarations: [
@@ -37,13 +40,17 @@ import {NavbarComponent} from "./navbar/navbar.component";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    AutoCompleteModule,
+    ButtonModule,
     HttpClientModule,
     MatButtonModule,
     MatToolbarModule,
     MatInputModule,
     MatIconModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    CalendarModule
   ],
   providers: [MapService, GeocodingService],
   bootstrap: [AppComponent]
