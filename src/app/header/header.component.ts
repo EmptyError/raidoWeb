@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import {ResponseJsoService} from "../response-jso.service";
 
 @Component({
   selector: "app-header",
@@ -7,7 +8,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: ResponseJsoService) {
+    service.getJson().subscribe((response) => {
+      alert(response);
+      this.service.postJson("JSON");
+    });
+  }
 
   date: Date;
   time: Date;
@@ -26,6 +32,7 @@ export class HeaderComponent implements OnInit {
   }
 
   handleClick() {
+
   }
 
   ngOnInit() {
